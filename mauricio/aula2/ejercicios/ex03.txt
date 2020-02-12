@@ -1,0 +1,8 @@
+* cp
+-v : explica lo que se esta haciendo.
+
+*mkdir
+-v : impprime un mensaje cada vez crea un directorio.
+
+*rm 
+-f : ignora los archivos no existentes y argumentos sin preguntar.

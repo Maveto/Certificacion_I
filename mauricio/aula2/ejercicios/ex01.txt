@@ -1,0 +1,10 @@
+a) * ls: lista todos los archivos que hay en el directorio.
+* ls -m: lista todos los elementos del directorio llenando todo el ancho de la terminal separados por comas.
+* ls -l: lista todos elementos del directorio mostrando permisos, usuario, grupo, tamanho y fecha de creacion.
+* ls -l -v: lista todos los elementos del directorio de forma larga y ordenados por los numeros entre el texto.
+
+c) * ls ai[1-5].c: lista los archivos que empiecen por ai, luego tengan un numero del intervalo 1-5 y terminen en .c
+* ls [a-c]ii1.c: lista todos los elementos que empiezan con una letra del intervalo a-c y que terminen en ii1.c
+
+e) * echo ai[1-5].c: imprime en la terminal ai[1-5].c
+* ls [a-c]ii1.c: lista los elementos que empiiecen por una letra del intervalo a-c y terminen en ii1.c

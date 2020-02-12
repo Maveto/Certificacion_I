@@ -1,0 +1,5 @@
+-c : imprime la lista en columnas.
+
+-g : imprime la lista en formato largo pero sin el nombre del usuario propietario.
+
+-S : ordena la lista por orden de tamanho.
