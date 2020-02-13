@@ -1,0 +1,1 @@
+el proceso forever sigue ejecutandose al cerrar la terminal cuando se usa el comando nohup.

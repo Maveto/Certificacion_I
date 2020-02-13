@@ -1,0 +1,36 @@
+1) a) ps -fu maveto
+b) ps -fe
+c) firefox &
+[3] 6987
+d) kill 6987
+[3]+  Terminated              firefox
+
+2) gedit 
+^Z[2]   Done                    gedit ex01.txt
+
+[3]+  Stopped                 gedit
+
+fg 
+gedit
+
+3) 1390 maveto    20   0 2980136 147452  41548 S  0,3  7,3   3:06.39 gnome-she+ 
+
+4) %MEM - simply RES divided by total physical memory
+          CODE - the `pgms' portion of quadrant 3
+          DATA - the entire quadrant 1 portion of VIRT plus all
+                 explicit mmap file-backed pages of quadrant 3
+          RES  - anything occupying physical memory which, beginning with
+                 Linux-4.5, is the sum of the following three fields:
+                 RSan - quadrant 1 pages, which include any
+                        former quadrant 3 pages if modified
+                 RSfd - quadrant 3 and quadrant 4 pages
+                 RSsh - quadrant 2 pages
+          RSlk - subset of RES which cannot be swapped out (any quadrant)
+          SHR  - subset of RES (excludes 1, includes all 2 & 4, some 3)
+          SWAP - potentially any quadrant except 4
+          USED - simply the sum of RES and SWAP
+          VIRT - everything in-use and/or reserved (all quadrants)
+
+
+5) Abri un firefox y los mate con el top apretando el comando k y puse el PID del firefox para matarlo.
+
