@@ -1,0 +1,3 @@
+ls > archivo.txt
+sort < archivo.txt
+sort < archivo.txt > salida.txt
