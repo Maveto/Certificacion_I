@@ -1,0 +1,133 @@
+1) Nombre de la maquina
+hostname
+maveto-virtual-machine
+
+2) fecha y hora
+date
+vie feb 14 07:50:52 -04 2020
+
+3) ubicacion comando cp
+which cp
+/bin/cp
+
+4) 10 ejemplos:
+a) find .
+.
+./mauricio
+./mauricio/aula1
+./mauricio/aula1/bio.txt
+./mauricio/aula1/notas.txt
+./mauricio/aula4
+./mauricio/aula4/ejercicios
+./mauricio/aula4/ejercicios/forever.sh
+./mauricio/aula4/ejercicios/ex02.txt
+./mauricio/aula4/ejercicios/ex01.txt
+./mauricio/aula4/ejercicios/salidaForever.err
+./mauricio/aula4/ejercicios/salidaForever.txt
+...
+
+b)find mauricio -maxdepth 2 -name "*.txt"
+mauricio/aula1/bio.txt
+mauricio/aula1/notas.txt
+
+c)find mauricio -name "*.txt" ! -name "ex*"
+mauricio/aula1/bio.txt
+mauricio/aula1/notas.txt
+mauricio/aula4/ejercicios/salidaForever.txt
+
+d)find mauricio -type f -name "*.txt"
+mauricio/aula1/bio.txt
+mauricio/aula1/notas.txt
+mauricio/aula4/ejercicios/ex03.txt
+mauricio/aula4/ejercicios/ex02.txt
+mauricio/aula4/ejercicios/ex01.txt
+mauricio/aula4/ejercicios/salidaForever.txt
+mauricio/aula3/ejercicios/ex02.txt
+mauricio/aula3/ejercicios/ex01.txt
+mauricio/aula2/ejercicios/ex03.txt
+mauricio/aula2/ejercicios/ex02.txt
+mauricio/aula2/ejercicios/ex01.txt
+
+e)find ~ -type f -name ".*"
+/home/maveto/.bashrc
+/home/maveto/.mozilla/firefox/3de5ngwb.default-release/.parentlock
+/home/maveto/.mozilla/firefox/3de5ngwb.default-release/storage/permanent/chrome/.metadata-v2
+/home/maveto/.ICEauthority
+/home/maveto/.gitconfig
+/home/maveto/.profile
+/home/maveto/.bash_history
+/home/maveto/.viminfo
+/home/maveto/.sudo_as_admin_successful
+/home/maveto/.bash_logout
+
+f)find -type f -perm 0740
+
+g)find . -user maveto
+.
+./mauricio
+./mauricio/aula1
+./mauricio/aula1/bio.txt
+./mauricio/aula1/notas.txt
+./mauricio/aula4
+./mauricio/aula4/ejercicios
+./mauricio/aula4/ejercicios/ex03.txt
+./mauricio/aula4/ejercicios/forever.sh
+./mauricio/aula4/ejercicios/ex02.txt
+./mauricio/aula4/ejercicios/ex01.txt
+
+h)find / var / www -group adm
+find: ‘/sys/kernel/debug’: Permission denied
+find: ‘/sys/fs/pstore’: Permission denied
+find: ‘/run/gdm3’: Permission denied
+find: ‘/run/udisks2’: Permission denied
+find: ‘/run/cups/certs’: Permission denied
+find: ‘/run/sudo’: Permission denied
+find: ‘/run/systemd/unit-root’: Permission denied
+find: ‘/run/systemd/resolve/netif’: Permission denied
+find: ‘/run/systemd/inaccessible’: Permission denied
+
+i)find / -atime 2
+/sbin/ifquery
+/sbin/swapon
+/sbin/ifup
+/sbin/setvtrgb
+/sbin/fstrim
+/sbin/plymouthd
+/sbin/u-d-c-print-pci-ids
+/lib/udev/libinput-device-group
+/lib/udev/hdparm
+/lib/udev/ifupdown-hotplug
+/lib/udev/mtp-probe
+/lib/apparmor/functions
+
+j)find / -size 40M
+find: ‘/sys/kernel/debug’: Permission denied
+find: ‘/sys/fs/pstore’: Permission denied
+find: ‘/run/gdm3’: Permission denied
+find: ‘/run/udisks2’: Permission denied
+find: ‘/run/cups/certs’: Permission denied
+find: ‘/run/sudo’: Permission denied
+find: ‘/run/systemd/unit-root’: Permission denied
+find: ‘/run/systemd/resolve/netif’: Permission denied
+find: ‘/run/systemd/inaccessible’: Permission denied
+
+5) localizar arcchivos .txt
+find -name "*.txt"
+
+./mauricio/aula1/bio.txt
+./mauricio/aula1/notas.txt
+./mauricio/aula4/ejercicios/ex02.txt
+./mauricio/aula4/ejercicios/ex01.txt
+./mauricio/aula4/ejercicios/salidaForever.txt
+./mauricio/aula3/ejercicios/ex02.txt
+./mauricio/aula3/ejercicios/ex01.txt
+./mauricio/aula2/ejercicios/ex03.txt
+./mauricio/aula2/ejercicios/ex02.txt
+./mauricio/aula2/ejercicios/ex01.txt
+./backup/mauricio/aula1/bio.txt
+./backup/mauricio/aula1/notas.txt
+./tres_primeros.txt
+
+6) borrar los archivos .so
+find -type f -name "*so" -exec rm {} \;
+
